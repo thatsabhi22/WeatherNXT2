@@ -1,6 +1,8 @@
 package com.theleafapps.pro.weathernxt2.repository
 
 import androidx.lifecycle.LiveData
+import com.theleafapps.pro.weathernxt2.api.WeatherApiService
+import com.theleafapps.pro.weathernxt2.db.WeatherDataDAO
 import com.theleafapps.pro.weathernxt2.models.WeatherInfo
 import javax.inject.Inject
 

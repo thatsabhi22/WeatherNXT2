@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.theleafapps.pro.weathernxt2.R
 import com.theleafapps.pro.weathernxt2.databinding.ActivityMainBinding
+import com.theleafapps.pro.weathernxt2.utils.Constants.DEFAULT_CITY
 import com.theleafapps.pro.weathernxt2.utils.Constants.wId
 import com.theleafapps.pro.weathernxt2.viewmodels.WeatherViewModel
 import dagger.hilt.android.AndroidEntryPoint

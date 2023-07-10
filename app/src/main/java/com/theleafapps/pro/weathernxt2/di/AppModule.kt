@@ -35,4 +35,9 @@ object AppModule {
         return WeatherApiService(baseUrl, client)
     }
 
+    @Provides
+    @Singleton
+    fun provideWeatherDataDao(weatherDb: WeatherDB): WeatherDataDAO {
+        return weatherDb.weatherDataDAO()
+    }
 }
