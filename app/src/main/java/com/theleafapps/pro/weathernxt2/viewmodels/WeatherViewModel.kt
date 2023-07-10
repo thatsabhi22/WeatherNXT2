@@ -10,6 +10,7 @@ import com.theleafapps.pro.weathernxt2.utils.Constants.api_key
 import com.theleafapps.pro.weathernxt2.utils.Constants.units
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.rxjava3.android.schedulers.AndroidSchedulers
+import io.reactivex.rxjava3.core.Completable
 import io.reactivex.rxjava3.disposables.CompositeDisposable
 import io.reactivex.rxjava3.schedulers.Schedulers
 import javax.inject.Inject
@@ -36,7 +37,13 @@ class WeatherViewModel @Inject constructor(
                 .subscribeOn(Schedulers.io())
                 .observeOn(AndroidSchedulers.mainThread())
                 .flatMapCompletable {
-
+                    Completable.fromCallable {
+                        val weatherInfo =
+                            TransformUtil.extractWeatherInfoFromResponse(response)
+                        weatherInfo?.let {
+                            weatherRepository.insertWeatherInfo(weatherInfo)
+                        }
+                    }.subscribeOn(Schedulers.io())
                 }.subscribe({
                     // Success
                     errorMsg = ""
