@@ -4,7 +4,7 @@ import com.theleafapps.pro.weathernxt2.models.WeatherInfo
 import com.theleafapps.pro.weathernxtgen.models.WeatherData
 
 object TransformUtil {
-    public fun extractWeatherInfoFromResponse(weatherData:WeatherData): WeatherInfo? {
+    public fun extractWeatherInfoFromResponse(weatherData: WeatherData): WeatherInfo? {
         val weatherInfo = WeatherInfo(
             id = 1,
             city_name = weatherData.name.toString(),
