@@ -2,6 +2,7 @@ package com.theleafapps.pro.weathernxt2.ui
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.activity.viewModels
 import com.theleafapps.pro.weathernxt2.R
 import com.theleafapps.pro.weathernxt2.databinding.ActivityMainBinding
 import com.theleafapps.pro.weathernxt2.utils.Constants.DEFAULT_CITY
