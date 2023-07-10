@@ -15,6 +15,7 @@ constructor(
 ) {
     fun getWeather(cityName: String, apiKey: String, units: String): Observable<WeatherData> =
         weatherApiService.getWeatherData(cityName, apiKey, units)
+
     fun insertWeatherInfo(weatherInfo: WeatherInfo) =
         weatherDataDao.insertWeatherInfo(weatherInfo)
 
