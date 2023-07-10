@@ -1,4 +1,4 @@
-package com.theleafapps.pro.weathernxtgen.models
+package com.theleafapps.pro.weathernxt2.models
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
