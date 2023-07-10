@@ -1,7 +1,9 @@
 package com.theleafapps.pro.weathernxt2.viewmodels
 
+import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import com.theleafapps.pro.weathernxt2.models.WeatherInfo
 import com.theleafapps.pro.weathernxt2.repository.WeatherRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import io.reactivex.rxjava3.disposables.CompositeDisposable
@@ -21,5 +23,9 @@ class WeatherViewModel @Inject constructor(
 
     fun getErrorMsg(): String {
         return errorMsg
+    }
+
+    fun getWeatherDB(wId: Int): LiveData<WeatherInfo> {
+        return weatherRepository.getWeatherInfoFromDB(wId)
     }
 }
