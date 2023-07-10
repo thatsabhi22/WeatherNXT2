@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">WeatherNXT2</string>
+    <string name="text_pressure">Pressure</string>
+    <string name="text_wind">Wind</string>
+    <string name="text_sunrise">Sunrise</string>
+    <string name="text_humidity">Humidity</string>
+    <string name="text_visibility">Visibility</string>
+    <string name="text_sunset">Sunset</string>
+    <string name="state_cd">state_cd</string>
+    <string name="weatherbtn_cd">weatherBtn_cd</string>
+    <string name="no_internet_img">no_internet_img</string>
+    <string name="check_your_connection_label">Check your connection</string>
+    <string name="city_name_et_hint">Enter City Name</string>
+    <string name="deg_celcius_text">°C</string>
+    <string name="city_placeholder">{City}</string>
+    <string name="error_message_placeholder">{error_message}</string>
 </resources>
