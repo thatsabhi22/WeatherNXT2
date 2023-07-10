@@ -50,7 +50,7 @@ class WeatherViewModel @Inject constructor(
                     errorMsg = ""
                 }, { error ->
                     // Error
-                    errorMsg = "City Not Foung"
+                    errorMsg = "City Not Found"
                     Log.d("tag", "getWeather Error: $errorMsg")
                 })
             disposables.add(disposable)
