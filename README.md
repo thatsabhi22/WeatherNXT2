@@ -6,6 +6,8 @@ Tech Stack
 - Dagger Hilt
 - KTOR
 - MVVM Architecture
-- Coroutines
+- RxJava / RxAndroid
 - View Binding
 - Room DB
+
+- Different Tech - KTOR, RxJava / RxAndroid
