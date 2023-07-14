@@ -10,4 +10,7 @@ Tech Stack
 - View Binding
 - Room DB
 
-- Different Tech - KTOR, RxJava / RxAndroid
+#  
+
+- Different Tech than WeatherNXT1
+- KTOR, RxJava / RxAndroid
