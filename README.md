@@ -1,5 +1,5 @@
 # WeatherNXT2
-A simple weather app - type - 2
+A MVVM Architecture based weather app - type - 2
 
 Tech Stack
 - Language - Kotlin
