@@ -6,6 +6,7 @@ Tech Stack
 - Dagger Hilt
 - KTOR
 - MVVM Architecture
+- Livedata-ViewModel
 - RxJava / RxAndroid
 - View Binding
 - Room DB
